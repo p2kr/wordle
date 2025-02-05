@@ -10,8 +10,9 @@
 	const wordleState = getWordleState();
 </script>
 
-<td
-	class="h-10 border font-semibold m-4 p-4"
+<button
+	tabindex="-1"
+	class="m-0.5 h-12 w-12 cursor-default border text-lg font-bold"
 	style="background-color: {getBgColor(
 		props.text,
 		wordleState.greenLetters,
@@ -20,4 +21,4 @@
 	)};"
 >
 	{props.text}
-</td>
+</button>

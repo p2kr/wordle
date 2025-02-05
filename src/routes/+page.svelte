@@ -8,16 +8,16 @@
 </script>
 
 <div class="m-1 flex flex-col items-center">
-	<table>
-		<tbody>
-			{#each [0, 1, 2, 3, 4, 5, 6] as row}
-				<tr>
+	<div>
+		<div class="">
+			{#each [0, 1, 2, 3, 4, 5] as row}
+				<div class="flex">
 					{#each [0, 1, 2, 3, 4] as col}
 						<Cell text={wordleState.currentFill?.[row]?.[col]} />
 					{/each}
-				</tr>
+				</div>
 			{/each}
-		</tbody>
-	</table>
+		</div>
+	</div>
 	<Keyboard />
 </div>
